@@ -1,0 +1,10 @@
+Gerando a variável com suas credenciais de acesso
+$UserCredential = Get-Credential
+Digite suas credenciais de acesso
+
+Conectando-se ao Exchange Online
+Connect-ExchangeOnline -UserPrincipalName usuario@seudominio.com -ShowProgress $true
+
+Comando PowerShell para definiar as configurações
+Set-MailboxRegionalConfiguration -Identity "usuario@seudominio.com" -Language "pt-BR" -TimeZone "America/Sao_Paulo" -TimeFormat "HH:mm" -DateFormat "dd/MM/yyyy"
+
